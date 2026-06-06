@@ -1,0 +1,23 @@
+# Half Adder in Verilog
+
+A 1-bit half adder implemented in Verilog with a full testbench.
+
+## Truth Table
+| A | B | Sum | Carry |
+|---|---|-----|-------|
+| 0 | 0 |  0  |   0   |
+| 0 | 1 |  1  |   0   |
+| 1 | 0 |  1  |   0   |
+| 1 | 1 |  0  |   1   |
+
+## Simulation Output
+![Waveform](waveform.png)
+
+## How to Run
+iverilog -o half_adder.out half_adder.v tb_half_adder.v
+vvp half_adder.out
+gtkwave half_adder.vcd
+
+## Tools Used
+- Icarus Verilog
+- GTKWave
